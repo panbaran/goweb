@@ -20,7 +20,7 @@ func TestHandler(t *testing.T) {
 			status, http.StatusOK)
 	}
 
-	expected := "Congratulations! Your Go application has been successfully deployed on Kubernetes."
+	expected := "0.4.0"
 	if rr.Body.String() != expected {
 		t.Errorf("handler returned unexpected body: got %v want %v",
 			rr.Body.String(), expected)
